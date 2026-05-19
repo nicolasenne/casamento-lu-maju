@@ -1,16 +1,17 @@
 .container {
-  padding-left: 12vw;
-  width: calc(100% - 5%);
+  max-width: 900px;
+  margin: auto;
+  padding: 0 5%;
 }
 
 @media (max-width: 960px) {
   .container {
-    padding-left: 5%;
+    max-width: 800px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    padding-left: 5%;
+    max-width: 500px;
   }
 }

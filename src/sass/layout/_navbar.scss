@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.navbar {
+  padding: 24px 0;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  a {
+    color: $emerald;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+    font-size: 0.75rem;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    nav {
+      gap: 24px;
+    }
+  }
+}

@@ -1,0 +1,292 @@
+@use '../abstracts' as *;
+
+.hero {
+  padding-top: 48px;
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+
+    h1 {
+      font-family: $cursive;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 1;
+
+      span {
+        display: block;
+        font-size: 4rem;
+        margin: 16px 0;
+      }
+    }
+
+    p {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  &__floral {
+    position: absolute;
+    width: 140px;
+
+    &--left {
+      left: 10%;
+      top: 10%;
+    }
+
+    &--right {
+      right: 10%;
+      bottom: 10%;
+    }
+  }
+}
+
+// INTRO
+
+.intro {
+  &__content {
+    max-width: 640px;
+    text-align: center;
+
+    p {
+      font-size: 1.05rem;
+      line-height: 2;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+// COUNTDOWN
+
+.countdown {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 64px;
+  }
+
+  &__content {
+    text-align: center;
+
+    h2 {
+      font-family: $cursive;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    span {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+}
+
+// CEREMONY
+
+.ceremony {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  &__content {
+    h2 {
+      font-family: $cursive;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      line-height: 1.8;
+    }
+
+    i {
+      color: $green;
+      font-size: 1.2rem;
+      transform: translateY(4px);
+    }
+
+    span {
+      display: block;
+      color: $emerald;
+    }
+  }
+}
+
+// RSVP
+
+.rsvp {
+  &__wrapper {
+    max-width: 480px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: $cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  input {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid $gray;
+    padding: 12px 0;
+    color: $emerald;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $emerald;
+    }
+  }
+
+  .radio-group {
+    p {
+      margin-bottom: 16px;
+    }
+
+    label {
+      margin: 0 16px;
+    }
+  }
+
+  button {
+    align-self: center;
+    background: $emerald;
+    color: $white;
+    padding: 16px 40px;
+    border-radius: 999px;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}
+
+// GIFTS
+
+.gifts {
+  &__wrapper {
+    text-align: center;
+  }
+
+  h2 {
+    font-family: $cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  a {
+    color: $emerald;
+    border-bottom: 1px solid $green;
+    padding-bottom: 4px;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: 900px) {
+  .countdown__wrapper,
+  .ceremony__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown__content {
+    order: -1;
+  }
+
+  .hero__floral {
+    display: none;
+  }
+
+  .ceremony__image {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 72px 0;
+  }
+
+  .hero {
+    &__text {
+      h1 {
+        font-size: 4rem;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  .countdown {
+    &__grid {
+      gap: 16px;
+
+      span {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .ceremony,
+  .rsvp,
+  .gifts,
+  .countdown {
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+}

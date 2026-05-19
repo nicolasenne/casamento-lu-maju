@@ -1,15 +1,12 @@
 @font-face {
-  font-family: 'FSLucasPro';
-  src: url('../assets/fonts/FSLucasPro-Bold.ttf');
-  font-style: bold;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FSLucasPro';
-  src: url('../assets/fonts/FSLucasPro-Med.ttf');
-  font-style: medium;
+  font-family: 'Eyesome Script';
+  src: url('../../assets/fonts/Eyesome-Script.otf') format('opentype');
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+$cursive: 'Eyesome Script', cursive;
+$sans: 'Montserrat', sans-serif;
