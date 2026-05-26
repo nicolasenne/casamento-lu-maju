@@ -18,184 +18,204 @@
   </head>
 
   <body>
+    
     <header class="navbar">
-      <nav class="container">
-        <a href="#hero">Casamento</a>
-        <a href="#ceremony">Cerimônia</a>
-        <a href="#rsvp">Confirmar presença</a>
-        <a href="#gifts">Lista de presentes</a>
-      </nav>
+      <div class="navbar__wrapper">
+        <button class="navbar__toggle" aria-label="Abrir menu">
+          <i class="bi bi-list"></i>
+        </button>
+        
+        <nav class="navbar__menu">
+          <a href="#hero">Casamento</a>
+          <a href="#ceremony">Cerimônia</a>
+          <a href="#rsvp">Confirmar presença</a>
+          <a href="#gifts">Lista de presentes</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section id="hero" class="hero section">
-        <div class="hero__content container">
-          <img
-            src="assets/images/floral-left.png"
-            alt=""
-            class="hero__floral hero__floral--left"
-          />
+    <div class="page-frame">
+      <img src="assets/images/border-top-right.svg" class="corner top-right">
+      <img src="assets/images/border-bottom-left.svg" class="corner bottom-left">
 
-          <div class="hero__text">
-            <h1>
-              Maria Julia
-              <span>e</span>
-              Luís Gustavo
-            </h1>
-
-          </div>
-
-          <img
-            src="assets/images/floral-right.png"
-            alt=""
-            class="hero__floral hero__floral--right"
-          />
-        </div>
-      </section>
-
-      <section class="intro section">
-        <div class="container intro__content">
-          <p>Queridos familiares e amigos,</p>
-
-          <p>
-            Com muita alegria, convidamos vocês para viverem conosco um dos
-            momentos mais especiais de nossas vidas.
-          </p>
-
-          <p>
-            Estamos ansiosos para estarmos juntos na celebração do nosso
-            casamento!
-          </p>
-        </div>
-      </section>
-
-      <section class="countdown section">
-        <div class="container countdown__wrapper">
-          <div class="countdown__image">
+      <main>
+        <section id="hero" class="hero section">
+          <div class="hero__content container">
             <img
-              src="assets/images/location.png"
-              alt="Local da cerimônia"
+              src="assets/images/floral-left.svg"
+              alt=""
+              class="hero__floral hero__floral--left"
+            />
+
+            <div class="hero__text">
+              <h1>
+                Maria Julia
+                <span>e</span>
+                Luís Gustavo
+              </h1>
+            </div>
+
+            <img
+              src="assets/images/floral-right.svg"
+              alt=""
+              class="hero__floral hero__floral--right"
             />
           </div>
+        </section>
 
-          <div class="countdown__content">
-            <h2>Faltam</h2>
+        <section class="intro section">
+          <div class="container intro__content">
+            <p>Queridos familiares e amigos,</p>
 
-            <div class="countdown__grid">
-              <div>
-                <span id="days">000</span>
-                <small>dias</small>
-              </div>
+            <p>
+              Com muita alegria, convidamos vocês para viverem conosco um dos
+              momentos mais especiais de nossas vidas.
+            </p>
 
-              <div>
-                <span id="hours">00</span>
-                <small>horas</small>
-              </div>
-
-              <div>
-                <span id="minutes">00</span>
-                <small>minutos</small>
-              </div>
-            </div>
+            <p>
+              Estamos ansiosos para estarmos juntos na celebração do nosso
+              casamento!
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="ceremony" class="ceremony section">
-        <div class="container ceremony__wrapper">
-          <div class="ceremony__content">
-            <h2>Cerimônia</h2>
+        <section class="countdown section">
+          <div class="container countdown__wrapper">
+            <div class="countdown__image">
+              <img
+                src="assets/images/location.png"
+                alt="Local da cerimônia"
+              />
+            </div>
 
-            <ul>
-              <li>
-                <i class="bi bi-calendar-heart"></i>
-                <span>Sábado, 07.11.2026</span>
-              </li>
+            <div class="countdown__content">
+              <h2>Faltam</h2>
 
-              <li>
-                <i class="bi bi-watch"></i>
-                <span>Às 14h</span>
-              </li>
-
-              <li>
-                <i class="bi bi-geo-alt-fill"></i>
+              <div class="countdown__grid">
+                <div>
+                  <span id="days">000</span>
+                  <small>dias</small>
+                </div>
 
                 <div>
-                  <span>Casa Nare</span>
-                  <span>Rua Joaquim Nabuco, 489</span>
-                  <span>Brooklin, São Paulo/SP</span>
+                  <span id="hours">00</span>
+                  <small>horas</small>
                 </div>
-              </li>
 
-              <li>
-                <i class="bi bi-person-circle"></i>
-                <span>Traje social completo</span>
-              </li>
-            </ul>
+                <div>
+                  <span id="minutes">00</span>
+                  <small>minutos</small>
+                </div>
+
+                <div>
+                  <span id="seconds">00</span>
+                  <small>segundos</small>
+              </div>
+              </div>
+            </div>
           </div>
+        </section>
 
-          <div class="ceremony__image">
-            <img
-              src="assets/images/couple.png"
-              alt="Traje cerimônia"
-            />
-          </div>
-        </div>
-      </section>
+        <section id="ceremony" class="ceremony section">
+          <div class="container ceremony__wrapper">
+            <div class="ceremony__content">
+              <h2>Cerimônia</h2>
 
-      <section id="rsvp" class="rsvp section">
-        <div class="container rsvp__wrapper">
-          <h2>Confirme sua presença</h2>
+              <ul>
+                <li>
+                  <i class="bi bi-calendar-heart"></i>
+                  <span>Sábado, 07.11.2026</span>
+                </li>
 
-          <form>
-            <div class="form-group">
-              <input
-                type="text"
-                placeholder="Nome completo"
-                required
+                <li>
+                  <i class="bi bi-watch"></i>
+                  <span>Às 14h</span>
+                </li>
+
+                <li>
+                  <i class="bi bi-geo-alt-fill"></i>
+
+                  <div>
+                    <span>Casa Nare</span>
+                    <span>Rua Joaquim Nabuco, 489</span>
+                    <span>Brooklin, São Paulo/SP</span>
+                  </div>
+                </li>
+
+                <li>
+                  <i class="bi bi-person-circle"></i>
+                  <span>Traje social completo</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ceremony__image">
+              <img
+                src="assets/images/couple.png"
+                alt="Traje cerimônia"
               />
             </div>
+          </div>
+        </section>
 
-            <div class="form-group">
-              <input
-                type="text"
-                placeholder="Nome do acompanhante"
-              />
-            </div>
+        <section id="rsvp" class="rsvp section">
+          <div class="container rsvp__wrapper">
+            <h2>Confirme sua presença</h2>
 
-            <div class="form-group radio-group">
-              <p>Confirmo presença</p>
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Nome completo"
+                  required
+                />
+              </div>
 
-              <label>
-                <input type="radio" name="attendance" value="sim" />
-                Sim
-              </label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Nome do acompanhante"
+                />
+              </div>
 
-              <label>
-                <input type="radio" name="attendance" value="nao" />
-                Não
-              </label>
-            </div>
+              <p class="rsvp-radio">Confirmo presença</p>
+              <div class="form-group radio-group">
 
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-      </section>
+                <label>
+                  <input type="radio" name="attendance" value="sim" />
+                  Sim
+                </label>
 
-      <section id="gifts" class="gifts section">
-        <div class="container gifts__wrapper">
-          <h2>Lista de presentes</h2>
+                <label>
+                  <input type="radio" name="attendance" value="nao" />
+                  Não
+                </label>
+              </div>
 
-          <a href="#" target="_blank">Presentes Mickey</a>
-        </div>
-      </section>
-    </main>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
 
-    <footer class="footer">
-      <img src="assets/images/rings.svg" alt="" />
-    </footer>
+        <section id="gifts" class="gifts section">
+          <div class="container gifts__wrapper">
+            <h2>Lista de presentes</h2>
 
-    <script src="js/countdown.js"></script>
+            <a href="#" target="_blank">
+              <span>Presentes Mickey</span>
+              <i class="bi bi-arrow-right-short"></i>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <img src="assets/images/rings.svg" alt="Rings" />
+      </footer>
+    </div>
+
+    <script src="js/menu.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>

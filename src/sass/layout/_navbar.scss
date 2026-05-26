@@ -1,33 +1,88 @@
 @use '../abstracts' as *;
 
 .navbar {
+  margin: 0 24px;
   padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 
-  nav {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__toggle {
+    display: none;
+    color: $emerald;
+    font-size: 2rem;
+  }
+
+  &__menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 48px;
     flex-wrap: wrap;
-  }
 
-  a {
-    color: $emerald;
-    text-transform: uppercase;
-    letter-spacing: 0.18rem;
-    font-size: 0.75rem;
-    transition: opacity 0.3s ease;
+    a {
+      color: $emerald;
+      text-transform: uppercase;
+      letter-spacing: 0.18rem;
+      font-size: 0.75rem;
+      transition: opacity 0.3s ease;
 
-    &:hover {
-      opacity: 0.6;
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 }
 
 @media (max-width: 640px) {
   .navbar {
-    nav {
+    padding: 16px 0;
+
+    &__wrapper {
+      justify-content: flex-end;
+    }
+
+    &__toggle {
+      display: block;
+    }
+
+    &__menu {
+      position: absolute;
+      top: calc(100% + 16px);
+      right: 0;
+
+      width: 100%;
+
+      background: $white;
+
+      flex-direction: column;
       gap: 24px;
+
+      padding: 32px 24px;
+
+      border: 1px solid $gray;
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
     }
   }
 }
