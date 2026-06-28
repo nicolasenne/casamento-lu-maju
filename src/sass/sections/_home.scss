@@ -191,6 +191,7 @@
       font-size: 3rem;
       font-weight: 400;
       margin-bottom: 40px;
+      text-align: center;
     }
 
     ul {
@@ -202,6 +203,9 @@
 
     li {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
       gap: 12px;
     }
 
@@ -213,6 +217,20 @@
     span {
       display: block;
       color: $emerald;
+    }
+
+    .instructions {
+      font-size: .8rem;
+      margin-top: 1rem;
+      text-wrap: balance;
+      max-width: 500px;
+    }
+
+    img {
+      height: 150px;
+      background-color: $cream;
+      border: 1px solid $green;
+      border-radius: 8px;
     }
   }
 
