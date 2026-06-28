@@ -28,9 +28,9 @@
 
 @font-face {
   font-family: "Eyesome Script";
-  src: url("../../assets/fonts/Eyesome-Script.otf") format("opentype");
+  src: url("../../assets/fonts/Eyesome-Script.woff2") format("woff2"), url("../../assets/fonts/Eyesome-Script.otf") format("opentype");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500;
   font-display: swap;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
