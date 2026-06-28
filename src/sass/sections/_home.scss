@@ -46,7 +46,7 @@
   z-index: -1;
 }
 
-
+// Hero
 .hero {
   padding-top: 10rem;
   position: relative;
@@ -406,11 +406,7 @@
   .hero {
     &__text {
       h1 {
-        font-size: 4rem;
-
-        span {
-          font-size: 3rem;
-        }
+        font-size: 2.8rem;
       }
     }
 
