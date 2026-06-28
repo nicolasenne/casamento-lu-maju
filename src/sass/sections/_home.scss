@@ -263,7 +263,7 @@
     margin: auto;
   }
 
-  input {
+  .text {
     width: 100%;
     background: transparent;
     border-bottom: 1px solid $green;
@@ -281,26 +281,25 @@
   }
 
   .rsvp-radio {
-    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
   }
 
   .radio-group {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 8px;
 
     input {
-      transform: scale(1.5);
+      transform: scale(1.7);
       accent-color: $emerald;
+      margin-right: 8px;
     }
 
     p {
       margin-bottom: 16px;
-    }
-
-    label {
-      display: flex;
-      gap: 12px;
     }
   }
 

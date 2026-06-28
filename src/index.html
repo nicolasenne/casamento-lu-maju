@@ -172,29 +172,48 @@
           <div class="container rsvp__wrapper">
             <h2>Confirme sua presença</h2>
 
-            <form>
+            <form id="rsvp-form">
               <div class="form-group">
-                <input type="text" placeholder="Nome completo" required />
+                <input
+                  id="guest-name"
+                  type="text"
+                  placeholder="Nome completo"
+                  class="text"
+                  required
+                />
               </div>
 
               <div class="form-group">
-                <input type="text" placeholder="Nome do acompanhante" />
+                <input
+                  id="companion-name"
+                  type="text"
+                  placeholder="Nome do acompanhante"
+                  class="text"
+                />
               </div>
 
-              <p class="rsvp-radio">Confirmo presença</p>
-              <div class="form-group radio-group">
-                <label>
-                  <input type="radio" name="attendance" value="sim" />
-                  Sim
-                </label>
+              <div class="radio-group">
+                <p>Confirmo presença</p>
+                <div class="rsvp-radio">
+                  <label>
+                    <input
+                      type="radio"
+                      name="attendance"
+                      value="Sim"
+                      required
+                    />
+                    Sim
+                  </label>
 
-                <label>
-                  <input type="radio" name="attendance" value="nao" />
-                  Não
-                </label>
+                  <label>
+                    <input type="radio" name="attendance" value="Não" />
+                    Não
+                  </label>
+                </div>
               </div>
 
               <button type="submit">Enviar</button>
+              <p id="form-message"></p>
             </form>
           </div>
         </section>
@@ -224,5 +243,6 @@
     <script src="js/menu.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/countdown.js"></script>
+    <script src="js/rsvp.js"></script>
   </body>
 </html>

@@ -416,7 +416,6 @@ section {
 .navbar {
   margin: 0 24px;
   padding: 24px 0;
-  z-index: 99;
 }
 .navbar__wrapper {
   display: flex;
@@ -461,6 +460,7 @@ section {
     position: absolute;
     top: calc(100% + 16px);
     right: 0;
+    z-index: 9999;
     width: 100%;
     background: #fff;
     flex-direction: column;
@@ -687,7 +687,7 @@ section {
   max-width: 500px;
   margin: auto;
 }
-.rsvp input {
+.rsvp .text {
   width: 100%;
   background: transparent;
   border-bottom: 1px solid #9eb98d;
@@ -695,30 +695,30 @@ section {
   color: #35611a;
   transition: border-color 0.3s ease;
 }
-.rsvp input::placeholder {
+.rsvp .text::placeholder {
   color: #9eb98d;
 }
-.rsvp input:focus {
+.rsvp .text:focus {
   border-color: #35611a;
 }
 .rsvp .rsvp-radio {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 .rsvp .radio-group {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 8px;
 }
 .rsvp .radio-group input {
-  transform: scale(1.5);
+  transform: scale(1.7);
   accent-color: #35611a;
+  margin-right: 8px;
 }
 .rsvp .radio-group p {
   margin-bottom: 16px;
-}
-.rsvp .radio-group label {
-  display: flex;
-  gap: 12px;
 }
 .rsvp button {
   align-self: center;
