@@ -759,6 +759,7 @@ section {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 .gifts a span {
   border-bottom: 1px solid #9eb98d;
@@ -816,5 +817,8 @@ section {
   .gifts h2,
   .countdown h2 {
     font-size: 2.4rem;
+  }
+  .ceremony .qr-code {
+    display: none;
   }
 }
